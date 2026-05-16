@@ -12,9 +12,9 @@
 resource "aws_s3_bucket" "s3-backend" {
 
   bucket = "s3-state-backend-terraform-modules-lab3a"
-  lifecycle {
-    prevent_destroy = true
-  }
+  # lifecycle {
+  #   prevent_destroy = true
+  # }
 
 }
 
@@ -51,5 +51,8 @@ resource "aws_s3_bucket_public_access_block" "example" {
 # ===============================================================
 
 module "compute" {
-  source = "./modules/compute"
+  source        = "./modules/compute"  
+  # instance_type = var.instance_type
 }
+
+
