@@ -106,9 +106,9 @@ provider "aws" {
 
 
 
-module "devops-ec2" {
-  source  = "kodcapsule/devops-ec2/aws"
-  version = "1.1.0"
+# module "devops-ec2" {
+#   source  = "kodcapsule/devops-ec2/aws"
+#   version = "1.1.0"
 
-  # insert the 1 required variable here
-}
+#   # insert the 1 required variable here
+# }
