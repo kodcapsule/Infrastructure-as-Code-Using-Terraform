@@ -2,7 +2,7 @@
 
 Spacelift is a sophisticated CI/CD platform purpose-built for infrastructure-as-code (IaC), supporting Terraform, Pulumi, CloudFormation, and Kubernetes. Unlike running Terraform manually or via generic CI pipelines, Spacelift gives you policy-as-code, drift detection, run visibility, and clean state management out of the box.
 
-This tutorial walks through everything you need to go from zero to a running EC2 instance managed by Spacelift.
+In this Lab  walks you through everything you need to go from zero to a running EC2 instance managed by Spacelift.
 
 ---
 
@@ -127,6 +127,9 @@ Spacelift needs credentials to provision resources in your AWS account. The reco
 
 ### Option A: OIDC (Recommended)
 
+> **Tip:** This feature is only available to paid Spacelift accounts. Please check out our pricing page for more information.
+
+Refer to the official documentation for more infor [Use the Spacelift OIDC token to authenticate With AWS](https://docs.spacelift.io/integrations/cloud-providers/oidc/aws-oidc)
 1. In AWS IAM, create an **Identity Provider**:
    - Provider type: `OpenID Connect`
    - Provider URL: `https://oidc.spacelift.io`
